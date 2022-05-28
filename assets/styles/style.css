@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
 * {
     box-sizing: border-box;
@@ -10,9 +10,10 @@ body {
     padding: 0;
 }
 
-h2, h3 {
+h2,
+h3 {
     color: rgb(32, 32, 32);
-} 
+}
 
 header {
     display: inline;
@@ -44,7 +45,16 @@ nav li {
     display: inline;
     list-style-type: none;
     margin-right: 20px;
-} 
+}
+
+nav li.menu {
+    display: none;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
 
 nav a {
     font-size: 18px;
@@ -54,6 +64,40 @@ nav a {
 
 nav a:hover {
     font-weight: bold;
+}
+
+nav div {
+    display: none;
+}
+
+div.dropdown {
+    display: none;
+}
+
+div.dropdown a {
+    width: 100%;
+    color: rgb(32, 32, 32);
+    font-weight: 600;
+    padding: 5px 20px 5px 20px;
+}
+
+div.dropdown a:nth-child(1) {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+div.dropdown a:nth-child(3) {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+div.dropdown a:hover {
+    font-weight: bold;
+}
+
+nav div.dropdown .dropdown-list:hover {
+    background-color: rgb(48, 47, 47);
+    color: white;
 }
 
 main {
@@ -94,6 +138,11 @@ aside {
     margin-top: 20px;
 }
 
+.table {
+    display: flex;
+    justify-content: center;
+}
+
 footer {
     padding: 20px;
     color: white;
@@ -105,12 +154,42 @@ footer p {
 }
 
 @media screen and (max-width: 1000px) {
-    #content, aside {
+
+    #content,
+    aside {
         width: 100%;
         padding: 0;
     }
 }
 
-@media screen and (max-width: 600px) {
-    
+@media screen and (max-width: 576px) {
+    nav li.menu {
+        display: inline;
+    }
+
+    nav li.list {
+        display: none;
+    }
+
+    div.dropdown {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        background-color: white;
+        width: 10em;
+        border-radius: 20px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        position: absolute;
+        top: 50%;
+        right: 45%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    div.dropdown {
+        position: absolute;
+        top: 50%;
+        right: 35%;
+    }
 }

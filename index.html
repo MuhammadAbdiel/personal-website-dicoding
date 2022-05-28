@@ -17,10 +17,18 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#asal">Asal</a></li>
-                <li><a href="#kegiatan">Kegiatan</a></li>
-                <li><a href="#makanan">Makanan</a></li>
+                <li class="menu">Menu</li>
+                <li class="list"><a href="#asal">Asal</a></li>
+                <li class="list"><a href="#kegiatan">Kegiatan</a></li>
+                <li class="list"><a href="#makanan">Makanan</a></li>
             </ul>
+
+            <!-- Menu Dropdown akan muncul ketika dibuka di device yang memiliki ukuran lebar layar max: 576px -->
+            <div class="">
+                <a class="dropdown-list" href="#asal">Asal</a>
+                <a class="dropdown-list" href="#kegiatan">Kegiatan</a>
+                <a class="dropdown-list" href="#makanan">Makanan</a>
+            </div>
         </nav>
     </header>
     <main>
@@ -94,7 +102,7 @@
                 </figure>
                 <section>
                     <h3>Informasi Lainnya</h3>
-                    <table>
+                    <table class="table">
                         <tr>
                             <th>Tempat Lahir</th>
                             <td>Pasuruan</td>
@@ -105,7 +113,7 @@
                         </tr>
                         <tr>
                             <th>Usia</th>
-                            <td>19 Tahun</td>
+                            <td>20 Tahun</td>
                         </tr>
                     </table>
                 </section>
@@ -113,7 +121,7 @@
         </aside>
     </main>
     <footer>
-        <p>Muhammad Abdiel Firjatullah &copy 2021</p>
+        <p>Muhammad Abdiel Firjatullah &copy 2022</p>
     </footer>
     <script src="script.js"></script>
 </body>

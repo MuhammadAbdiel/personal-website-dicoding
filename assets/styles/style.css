@@ -70,6 +70,8 @@ nav div {
     display: none;
 }
 
+/* Dropdown Menu */
+
 div.dropdown {
     display: none;
 }
@@ -99,6 +101,8 @@ nav div.dropdown .dropdown-list:hover {
     background-color: rgb(48, 47, 47);
     color: white;
 }
+
+/* End Dropdown Menu */
 
 main {
     padding: 20px;
@@ -152,6 +156,8 @@ footer {
 footer p {
     text-align: center;
 }
+
+/* Media Query */
 
 @media screen and (max-width: 1000px) {
 

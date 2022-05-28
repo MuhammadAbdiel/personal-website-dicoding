@@ -8,6 +8,8 @@ nasiGoreng.addEventListener("mouseout", function () {
   nasiGoreng.setAttribute("src", "assets/image/nasi-goreng.jpg");
 });
 
+// Dropdown Menu
+
 const menu = document.querySelector(".menu");
 const dropdown = document.querySelector("nav div");
 
